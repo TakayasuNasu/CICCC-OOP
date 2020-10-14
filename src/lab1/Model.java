@@ -191,8 +191,8 @@ public class Model {
      * @return the height in feet and inches
      */
     public String getHeightInFeetAndInches() {
-        int feet = this.height / 12;
-        int inch = this. height % 12;
+        int feet = this.height / INCHES_PER_FOOT;
+        int inch = this. height % INCHES_PER_FOOT;
         StringBuilder word = new StringBuilder();
         word.append(feet);
         word.append(" feet ");
