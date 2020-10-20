@@ -8,7 +8,7 @@ public class Game {
   private Question question;
   private Answer answer;
   private int wrongCount = 0;
-  private List<String> wrongLetters = new ArrayList<String>();
+  private List<String> wrongLetters = new ArrayList<>();
 
   public Game() {
     this.question = new Question();
@@ -56,7 +56,7 @@ public class Game {
 
   private void showResult() {
     System.out.println("You are guessing: " + this.answer.getCurrent());
-    String[] array = this.wrongLetters.toArray(new String[this.wrongLetters.size()]);
+    String[] array = this.wrongLetters.toArray(new String[0]);
     String message = String.join(" ", array);
     System.out.println(
         String.format("You have guessed (%d) wrong letters: %s ", this.wrongCount, message));
