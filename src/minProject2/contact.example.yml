@@ -1,0 +1,9 @@
+!!minProject2.ContactList
+list:
+  - city: Vancouver
+    home: ''
+    id: 1
+    mobile: 604-376-2691
+    name: Takayasu
+    work: ''
+
